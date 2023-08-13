@@ -8,9 +8,9 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: ':tab',
+    path: 'newfeed',
     loadChildren: () =>
-      import('./folder/folder.module').then((m) => m.FolderPageModule),
+      import('./newsfeed/newsfeed.module').then((m) => m.NewsfeedPageModule),
   },
 ];
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { articles } from './data/articles';
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
