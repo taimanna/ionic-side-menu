@@ -12,6 +12,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./newsfeed/newsfeed.module').then((m) => m.NewsfeedPageModule),
   },
+  {
+    path: 'newfeed/:id',
+    loadChildren: () =>
+      import('./detail/detail.module').then((m) => m.DetailPageModule),
+  },
 ];
 
 @NgModule({

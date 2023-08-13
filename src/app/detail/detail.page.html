@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img src={{article.imageUrl}} />
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{article.description}}
+    </ion-card-content>
+
+    <ion-button (click)="handleLike()" fill="clear">
+      <ion-icon name={{icon}}></ion-icon>
+      {{article.likes}}
+    </ion-button>
+  </ion-card>
+</ion-content>

@@ -8,7 +8,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-list>
-    <ion-item *ngFor="let article of articles" routerLink="article.id">
+    <ion-item *ngFor="let article of articles" routerLink={{article.id}}>
       <ion-thumbnail slot="start">
         <img src={{article.imageUrl}} />
       </ion-thumbnail>
